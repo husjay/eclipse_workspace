@@ -13,8 +13,8 @@ import java.io.IOException;
  */
 public class CopyDir {
 	public static void main(String[] args) throws IOException{
-		String srcPath = "/Users/hsj/test/src";
-		String destPath = "/Users/hsj/test/dest";
+		String srcPath = "/Users/hsj/test/a";
+		String destPath = "/Users/hsj/test/a/b";
 		
 		DirUtil.copyDir(srcPath, destPath);	
 	}
