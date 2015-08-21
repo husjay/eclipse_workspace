@@ -26,7 +26,7 @@ public class URLDemo02 {
 		is.close();
 		*/
 		BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream(), "utf-8"));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("baidu.html")));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("baidu.html"), "utf-8"));
 		
 		String msg = null;
 		while((msg = br.readLine()) != null) {
@@ -36,6 +36,6 @@ public class URLDemo02 {
 		}
 		bw.flush();
 		bw.close();
-//		br.close();
+		br.close();
 	}
 }

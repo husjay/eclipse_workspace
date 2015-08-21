@@ -12,8 +12,7 @@ public class InetSocketDemo01 {
 		System.out.println(address.getHostName());
 		System.out.println(address.getPort());
 		InetAddress addr =address.getAddress();
-		System.out.println(addr.getHostAddress());  //
-		System.out.println(addr.getHostName());  //
-		
+		System.out.println(addr.getHostAddress());  //返回地址
+		System.out.println(addr.getHostName());  //	返回主机名
 	}
 }

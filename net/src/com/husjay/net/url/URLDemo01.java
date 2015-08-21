@@ -5,7 +5,12 @@ import java.net.URL;
 
 
 public class URLDemo01 {
-	public static void main(String[] arhs) throws MalformedURLException {
+	/**
+	 * 
+	 * @param args
+	 * @throws MalformedURLException
+	 */
+	public static void main(String[] args) throws MalformedURLException {
 		
 		URL url = new URL("http://www.baidu.com:80/index.html#aa?uname:husjay");
 		System.out.println("主机："+url.getHost());
