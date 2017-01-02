@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>spring boot</title>
+</head>
+<body>
+	<h1>hello girls</h1>
+	
+	<div class='girls'>
+		<div th:if="${not #lists.isEmpty(girls)}">
+			<div class='girls-header'>
+				<h2>girls列表</h2>
+			</div>
+			<div class='gilrs-list'>
+				<ul>
+					<li th:each="girl:${girls}">
+						<span th:text="${girl.name}"></span>
+						<span th:text="${girl.age}"></span>
+						<span th:text="${girl.cupSize}"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
