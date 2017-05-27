@@ -1,10 +1,8 @@
 package com.husjay.zxing;
 
-import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Path;
 import java.util.HashMap;
 
 import javax.imageio.ImageIO;
@@ -36,7 +34,7 @@ public class ZxingQRcode {
 		try {
 			MultiFormatReader formatReader = new MultiFormatReader();
 			
-			File file = new File("/Users/hsj/Documents/eclipse_workspace/qrcode/qrcode/code.png");
+			File file = new File("/Users/hsj/Documents/eclipse_workspace/qrcode/qrcode/zxcode.png");
 			
 			BufferedImage image = ImageIO.read(file);
 			
