@@ -1,4 +1,4 @@
-package soultion.StringToInteger;
+package soultion.oog_stringToInteger;
 
 public class StringToInteger {
 	
